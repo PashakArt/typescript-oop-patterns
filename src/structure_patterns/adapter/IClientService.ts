@@ -1,3 +1,6 @@
+/**
+ * Interface through which application classes can use external service classes
+ */
 export interface IClientService {
-    sendJSONData(JSONData: JSON): void;
+    sendData(JSONData: JSON): void;
 }

@@ -20,8 +20,8 @@ class Adapter implements IClientService {
         private dataReceiver: XMLDataReceiver,
     ) {}
 
-    sendJSONData(stockData: JSON): void {
+    sendData(stockData: JSON): void {
         const xmlData = JSONToXML(stockData);
-        this.dataReceiver.receiveXMLData(xmlData);
+        this.dataReceiver.receiveData(xmlData);
     }
 }
