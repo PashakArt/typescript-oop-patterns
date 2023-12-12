@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "@steroidsjs/eslint-config"
+    ],
+    "rules": {
+        "no-redeclare": "off"
+    },
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "node": true
+    }
+}

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@steroidsjs/eslint-config": "^2.1.2",
+    "eslint": "^8.55.0",
     "typescript": "^5.3.3"
   }
 }
