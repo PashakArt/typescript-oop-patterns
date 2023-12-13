@@ -4,7 +4,7 @@ import {Packer} from './Packer';
 import {PaymentService} from './PaymentSevice';
 
 /**
- * Facade - is simple interface for working with comples system
+ * Facade - is simple interface for working with complex system
  */
 class OrderCreator {
     constructor(
@@ -15,7 +15,7 @@ class OrderCreator {
 
     }
 
-    create(item: Item) {
+    create(item: Item): void {
         const isPaid = this.paymentService.pay(item);
 
         if (!isPaid) {
