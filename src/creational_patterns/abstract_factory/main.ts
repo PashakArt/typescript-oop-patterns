@@ -3,21 +3,21 @@ import {Factory} from './factories/Factory';
 import {KitchenFactory} from './factories/KitchenFactory';
 import {OfficeFactory} from './factories/OfficeFactory';
 
-enum FurnitureType {
+enum FurnitureTypeEnum {
     kithcen,
     office,
 }
 
 interface IConfig {
-    furnitureType: FurnitureType;
+    furnitureType: FurnitureTypeEnum;
 }
 
 function main({furnitureType}: IConfig) {
     let factory: Factory;
 
-    if (furnitureType === FurnitureType.kithcen) {
+    if (furnitureType === FurnitureTypeEnum.kithcen) {
         factory = new KitchenFactory();
-    } else if (furnitureType === FurnitureType.office) {
+    } else if (furnitureType === FurnitureTypeEnum.office) {
         factory = new OfficeFactory();
     } else {
         throw new Error('Factory type is not found');
