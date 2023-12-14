@@ -1,4 +1,4 @@
-import {IColor} from './IColor';
+import {IColor} from '../colors/IColor';
 
 export abstract class Shape {
     constructor(

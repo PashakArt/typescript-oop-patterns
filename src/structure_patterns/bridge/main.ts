@@ -1,7 +1,7 @@
-import {Black} from './Black';
-import {Rectangle} from './Rectangle';
-import {Red} from './Red';
-import {Triangle} from './Triangle';
+import {Black} from './colors/Black';
+import {Rectangle} from './shapes/Rectangle';
+import {Red} from './colors/Red';
+import {Triangle} from './shapes/Triangle';
 
 function main() {
     const blackColor = new Black();
