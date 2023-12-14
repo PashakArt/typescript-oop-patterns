@@ -1,6 +1,6 @@
-import {IFileStorage} from './IFileStorage';
+import {IFileStorage} from './storages/IFileStorage';
 
-class App {
+export class App {
     constructor(
         private storage: IFileStorage,
     ) {}
