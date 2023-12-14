@@ -1,12 +1,12 @@
-import {Sender} from './Sender';
+import {Sender} from './sub_systems/Sender';
 import {Item} from './Item';
-import {Packer} from './Packer';
-import {PaymentService} from './PaymentSevice';
+import {Packer} from './sub_systems/Packer';
+import {PaymentService} from './sub_systems/PaymentSevice';
 
 /**
  * Facade - is simple interface for working with complex system
  */
-class OrderCreator {
+export class OrderCreator {
     constructor(
         private paymentService: PaymentService,
         private packer: Packer,
