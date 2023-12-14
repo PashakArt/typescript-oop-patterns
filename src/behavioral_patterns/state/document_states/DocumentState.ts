@@ -1,4 +1,4 @@
-import {UserDocument} from './UserDocument';
+import {UserDocument} from '../UserDocument';
 
 export abstract class DocumentState {
     protected document: UserDocument;
@@ -10,7 +10,7 @@ export abstract class DocumentState {
     /**
      * document rendering logic in current status
      */
-    abstract render(): void;
+    abstract render(): string;
 
     abstract publish(): void;
 }

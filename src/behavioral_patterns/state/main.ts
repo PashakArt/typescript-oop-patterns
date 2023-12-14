@@ -1,4 +1,4 @@
-import {Draft} from './Draft';
+import {Draft} from './document_states/Draft';
 import {UserDocument} from './UserDocument';
 
 function main() {
@@ -7,6 +7,8 @@ function main() {
     const document = new UserDocument(initState);
 
     document.render();
+
+    initState.publish();
 }
 
 main();

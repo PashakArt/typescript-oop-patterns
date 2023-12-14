@@ -1,4 +1,4 @@
-import {DocumentState} from './DocumentState';
+import {DocumentState} from './document_states/DocumentState';
 
 export class UserDocument {
     constructor(
@@ -7,8 +7,8 @@ export class UserDocument {
         this.state.setDocument(this);
     }
 
-    render(): void {
-        this.state.render();
+    render(): string {
+        return this.state.render();
     }
 
     publish(): void {
