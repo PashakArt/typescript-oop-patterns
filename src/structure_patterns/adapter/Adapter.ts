@@ -10,9 +10,10 @@ function JSONToXML(_: JSON): XMLDocument {
 }
 
 /**
- * Adapter works with borth client and external service
+ * Adapter works with borth client and external service.
+ * Difference between adapter and bridge is that adapter is applied after fact to force incompatible classes to work together.
  */
-class Adapter implements IClientService {
+export class Adapter implements IClientService {
     constructor(
         /**
          * Instance of external service
