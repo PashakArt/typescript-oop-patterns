@@ -1,4 +1,4 @@
-export abstract class Rectangle {
+export class Rectangle {
     protected width: number;
 
     protected length: number;
@@ -8,5 +8,7 @@ export abstract class Rectangle {
         this.length = length;
     }
 
-    abstract clone(): Rectangle;
+    clone(): Rectangle {
+        return new Rectangle(this.width, this.length);
+    }
 }
