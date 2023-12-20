@@ -19,7 +19,9 @@ Design pattern is typical solutions for common problems. Below are the types of 
 ## Structure patterns are responsible for creating class hierarchies
 **Adapter** is a design pattern that allows objects with incompatible interfaces to work together.
 
-[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/structure_patterns/adapter) application works by retrieving data in JSON format. Then there is a requirement to send it to a third-party service. The third-party service only accepts in XML, but we do not have the ability to change the format of the extracted data on our side. Important: used after the fact to force incompatible classes to work together, unlike a bridge that is designed in advance.
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/structure_patterns/adapter) application works by retrieving data in JSON format. Then there is a requirement to send it to a third-party service. The third-party service only accepts in XML, but we do not have the ability to change the format of the extracted data on our side.
+
+*Important*: used after the fact to force incompatible classes to work together, unlike a bridge that is designed in advance.
 
 **Bridge**
 
