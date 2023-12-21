@@ -2,7 +2,9 @@
 
 Design pattern is typical solutions for common problems. Below are the types of patterns with examples in typescript.
 ## Creational patterns are responsible for creating new objects:
-**Factory method** is pattern that provides interface for creating object in superclass, but allows subclass change type of object will be created. Important: created objects must have a common interface.
+**Factory method** is pattern that provides interface for creating object in superclass, but allows subclass change type of object will be created. 
+
+*Important*: created objects must have a common interface.
 
 [Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/creational_patterns/factory_method) expansion of delivery methods: use not only motor transport, but also sea vessels. For the client, with the factory method, there is no difference between these objects, since it will treat them as an abstract Transport. It will be important for him that the object has a deliver method, but how exactly it works is not important.
 
@@ -10,7 +12,13 @@ Design pattern is typical solutions for common problems. Below are the types of 
 
 **Prototype**
 
-**Builder**
+**Builder** is pattern that allows you to build complex objects step by step. It solves the problem when you need to create objects with a large number of configurations.
+
+You can go further and separate calls to builder methods into a separate class called director. In this case, the director will set order of construction steps, and builder will carry them out.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/creational_patterns/builder) creation of an apartment building and its layout for buyers.
+
+*Important*: Unlike other creational patterns where products must follow common interface builders can create different products. Therefore, it is impossible to include method for obtaining final product in builder interface
 
 **Singleton** is a design pattern that ensures that a class has only one instance. A global access point will be provided to this instance. Example of use is connecting to a database. Singleton is guaranteed to create only one instance of class responsible for connecting to it. This way we will prevent unnecessary connections. 
 
