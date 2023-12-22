@@ -11,9 +11,15 @@ is pattern that provides interface for creating object in superclass, but allows
 
 ### Abstract factory
 
-Abstract factory is a creational design pattern that allows you to create families of related objects without specifying their concrete classes. ...
+Abstract factory is a creational design pattern that allows you to create families of related objects without specifying their concrete classes.
 
-[Example:]() 
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/creational_patterns/abstract_factory) furniture factory simulation. You need to be able to create different products, for example table and chair, which can belong to different families: kitchen and office furniture.
+
+That is, we get: 
+- kitchen and office chair
+- kitchen and office table
+
+To do this, we can separate the common code into an abstract factory class that returns the product of the common interface. Then, in a class that inherits this abstract class and implements the creation of a concrete product, return this concrete product in product creation method. *Important*: thing here is that the products returned to client must implement a common interface.
 
 ### Prototype
 
