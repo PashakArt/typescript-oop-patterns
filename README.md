@@ -11,6 +11,10 @@ is pattern that provides interface for creating object in superclass, but allows
 
 ### Abstract factory
 
+Abstract factory is a creational design pattern that allows you to create families of related objects without specifying their concrete classes. ...
+
+[Example:]() 
+
 ### Prototype
 
 ### Builder
