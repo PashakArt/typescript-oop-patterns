@@ -1,9 +1,8 @@
+import {IShape} from './IShape';
 import {Rectangle} from './Rectangle';
 
-export class Square extends Rectangle {
-    constructor(width: number) {
-        super(width, width);
-    }
+export class Square implements IShape {
+    constructor(private width: number) {}
 
     clone(): Square {
         return new Square(this.width);

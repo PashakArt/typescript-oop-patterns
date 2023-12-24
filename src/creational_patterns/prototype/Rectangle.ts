@@ -1,12 +1,10 @@
-export class Rectangle {
-    protected width: number;
+import {IShape} from './IShape';
 
-    protected length: number;
-
-    constructor(width: number, length: number) {
-        this.width = width;
-        this.length = length;
-    }
+export class Rectangle implements IShape {
+    constructor(
+        protected width: number,
+        protected length: number,
+    ) {}
 
     clone(): Rectangle {
         return new Rectangle(this.width, this.length);
