@@ -22,6 +22,10 @@ That is, we get:
 To do this, we can separate the common code into an abstract factory class that returns the product of the common interface. Then, in a class that inherits this abstract class and implements the creation of a concrete product, return this concrete product in product creation method. *Important*: thing here is that the products returned to client must implement a common interface.
 
 ### Prototype
+Prototype is creational pattern is used when it is necessary to clone a class object without delving into the implementation of this class. It is used when you have object that needs to be copied. Prototype pattern entrusts creation of copies to objects being copied themselves. It introduces common interface for all objects that support cloning. This allows you to copy objects without being tied to their specific classes. Typically, such interface has only one clone method.
+Object that is copied is called the prototype.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/creational_patterns/prototype) creation of geometric shapes. Here prototype allows to produce exact copies of geometric shape objects without being tied to their classes.
 
 ### Builder
 Builder is pattern that allows you to build complex objects step by step. It solves the problem when you need to create objects with a large number of configurations.
