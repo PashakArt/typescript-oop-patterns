@@ -48,17 +48,20 @@ Adapter is a design pattern that allows objects with incompatible interfaces to 
 
 *Important*: used after the fact to force incompatible classes to work together, unlike a bridge that is designed in advance.
 
-**Bridge**
+### Bridge
+This is a pattern that suggests dividing class into separate parts: abstraction and implementation. [Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/structure_patterns/bridge) - class of geometric shapes: rectangle and triangle, there is need to expand hierarchy of shapes by color. If you use inheritance, then when you add new types of shapes or colors, the number of classes will grow significantly. To do this, it is proposed to replace inheritance with aggregation or composition, that is, in this example, the shape will contain a reference to the color.
 
-**Composite**
+In this example, the abstraction will be a shape class - abstraction delegates work to a related object. Realization is  color of the figures. With this approach, implementations can be interchanged, provided that all implementations have common interface.
 
-**Facade**
+### Composite
 
-**Decorator**
+### Facade
 
-**Proxy**
+### Decorator
 
-**Flyweight**
+### Proxy
+
+### Flyweight
 
 ## Behavioral patterns are responsible for creating effective interaction:
   - Chain of responsibility
