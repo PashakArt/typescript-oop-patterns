@@ -56,6 +56,9 @@ This is a pattern that suggests dividing class into separate parts: abstraction 
 In this example, the abstraction will be a shape class - abstraction delegates work to a related object. Realization is  color of the figures. With this approach, implementations can be interchanged, provided that all implementations have common interface.
 
 ### Composite
+Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were single objects. Composite proposes to view the single product and composite object through a single interface with a common costing method. For a product, it’d simply return the product’s price. For a composite object, it’d go over each item composite object contains, ask its price and then return total for this composite object.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/structure_patterns/composite) you need to calculate cost of the backpack and its contents. Inside backpack there can be both single objects and composite products, for example, pencil cases with school supplies. Inside the pencil cases there can be both composite objects and single products, for example, a pencil, an eraser. Task: calculate the cost of a backpack.
 
 ### Facade
 This pattern provides a simple interface to a complex system containing many classes.
