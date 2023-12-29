@@ -66,19 +66,32 @@ This pattern provides a simple interface to a complex system containing many cla
 [Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/structure_patterns/facade) creating an order in an online store. To do this, the buyer is provided with a simple interface to the system of payment, packaging, and delivery of goods.
 
 ### Decorator
-
+[Example:]()
 ### Proxy
-
+[Example:]()
 ### Flyweight
+[Example:]()
 
 ## Behavioral patterns are responsible for creating effective interaction:
-  - Chain of responsibility
-  - Command
-  - State
-  - Visitor
-  - Strategy
-  - Observer
-  - Template method
-  - Iterator
-  - Mediator
-  - Memento
+### Chain of responsibility
+[Example:]()
+### Command
+[Example:]()
+### State
+[Example:]()
+### Visitor
+[Example:]()
+### Strategy
+[Example:]()
+### Observer
+[Example:]()
+### Template method
+Template Method is a behavioral design pattern that defines skeleton of algorithm in parrent class but lets children classes override specific steps of algorithm without changing its structure. Steps of algorithm can be either abstract or contain implementation. Сoncrete class overrides some (or all) steps of algorithm. Сoncrete class does not override template method.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/template_method) working with files of different formats. There are common steps, such as opening a file and closing it, and there are steps whose implementation varies depending on the file type.
+### Iterator
+[Example:]()
+### Mediator
+[Example:]()
+### Memento
+[Example:]()
