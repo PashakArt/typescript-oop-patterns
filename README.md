@@ -78,7 +78,15 @@ This pattern provides a simple interface to a complex system containing many cla
 ### Command
 [Example:]()
 ### State
-[Example:]()
+State is a behavioral design pattern that allows objects to change behavior depending on their state. The idea is that an object can be in one of several states, which change each other all the time. The set of these states is predetermined and finite.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/state) working with a document and translating it into various modes:
+- draft
+- moderation
+- published
+
+Each mode or state can switch state within the context. The context is that the link to the state, in this example the context is the document.
+
 ### Visitor
 [Example:]()
 ### Strategy
