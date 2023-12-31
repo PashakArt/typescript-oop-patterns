@@ -92,7 +92,10 @@ Each mode or state can switch state within the context. The context is that the 
 ### Strategy
 [Example:]()
 ### Observer
-[Example:]()
+An observer is a pattern that allows objects to monitor events occurring in other objects. Observer pattern suggests storing list of references to subscriber objects inside publisher object, without publisher having to maintain subscription list itself. It will provide methods by which subscribers can add or remove themselves from the list.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/subscriber) subscription to changes in data store. Data store stores a link to event manager, and does not implement the logic of the subscription mechanism and notification of observers, so as not to confuse the logic of working with data and working with subscribers. When inserting or deleting, the event manager notifies observers. Observers are stored as an array of objects that implement the observer interface.
+
 ### Template method
 Template Method is a behavioral design pattern that defines skeleton of algorithm in parrent class but lets children classes override specific steps of algorithm without changing its structure. Steps of algorithm can be either abstract or contain implementation. Сoncrete class overrides some (or all) steps of algorithm. Сoncrete class does not override template method.
 
