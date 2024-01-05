@@ -88,7 +88,12 @@ State is a behavioral design pattern that allows objects to change behavior depe
 Each mode or state can switch state within the context. The context is that the link to the state, in this example the context is the document.
 
 ### Visitor
-[Example:]()
+Visitor is design pattern, which allows you to add new operations to the program, without changing the classes of objects over which these operations can be performed. It helps to solve problem when you need to perform some operations unrelated, but you do not want to “clog” classes with such operations.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/visitor) there are services to track USD and EUR currency exchange rate. At some point, we need to add logic of data export on tracking exchange rate in JSON format. To do this, we can create class of `Visitor` can perform described logic. Specific elements (in this case, these are trackers of exchange rate) should implement method of accepting the visitor. In future, if we need to change data export format on XML, we will only need to add new class of visitor, but classes of currency trees will not need to be touched, since they are not attached to a specific visitor. 
+
+*Important*: The benefit of using this pattern will be especially manifested when new operations are often added, and new elements are not added.
+
 ### Strategy
 [Example:]()
 ### Observer
