@@ -69,8 +69,6 @@ This pattern provides a simple interface to a complex system containing many cla
 [Example:]()
 ### Proxy
 [Example:]()
-### Flyweight
-[Example:]()
 
 ## Behavioral patterns are responsible for creating effective interaction:
 ### Chain of responsibility
