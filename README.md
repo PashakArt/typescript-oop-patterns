@@ -108,4 +108,6 @@ Template Method is a behavioral design pattern that defines skeleton of algorith
 ### Mediator
 [Example:]()
 ### Memento
-[Example:]()
+Memento is a behavioral design pattern that lets you save and restore the previous state of an object.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/memento)
