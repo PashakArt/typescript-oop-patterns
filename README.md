@@ -29,7 +29,7 @@ Prototype is creational pattern is used when it is necessary to clone a class ob
 ### Builder
 Builder is pattern that allows you to build complex objects step by step. It solves the problem when you need to create objects with a large number of configurations.
 
-You can go further and separate calls to builder methods into a separate class called director. In this case, the director will set order of construction steps, and builder will carry them out.
+You can go further and separate calls to builder methods into a separate class called `Director`. In this case, `Director` will set order of construction steps, and builder will carry them out.
 
 [Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/creational_patterns/builder) creation of an apartment building and its layout for buyers.
 
@@ -108,6 +108,8 @@ Template Method is a behavioral design pattern that defines skeleton of algorith
 ### Mediator
 [Example:]()
 ### Memento
-Memento is a behavioral design pattern that lets you save and restore the previous state of an object.
+Memento is a behavioral design pattern that allows you to save and restore an object's previous state. To do this, pattern suggests keeping copy of state in special snapshot object with limited interface that allows, for example, to find out date of manufacture or the name of snapshot. But, on other hand, snapshot must be open to its creator, allowing its internal state to be read and restored.
 
-[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/memento)
+This approach allows creators to take snapshots and give them away for storage to other entities called `Caretaker`. At the right time, `Caretaker` can ask the orginator to restore his state by transferring him snapshot.
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/memento) text editor that can save its state in a snapshot object and then at some point restore it using snapshot object.
