@@ -72,7 +72,7 @@ This pattern provides a simple interface to a complex system containing many cla
 
 ## Behavioral patterns are responsible for creating effective interaction:
 ### Chain of responsibility
-[Example:]()
+`TODO`
 ### Command
 [Example:]()
 ### State
@@ -93,7 +93,14 @@ Visitor is design pattern, which allows you to add new operations to the program
 *Important*: The benefit of using this pattern will be especially manifested when new operations are often added, and new elements are not added.
 
 ### Strategy
-[Example:]()
+The Strategy pattern is a behavioral design pattern that allows you to define a family of algorithms, encapsulate each of them and make them interchangeable. 
+
+[Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/strategy) This way, client code can select the required algorithm on the fly, regardless of which specific algorithm is used. In our example of working with S3 and local file storages, you can use the Strategy pattern as follows:
+- create an `IFileStorage` interface that defines methods for working with files (for example, getting and deleting files)
+- implementation of specific strategy classes: `S3Storage` and `LocalStorage`, which implement methods of the `IFileStorage` interface, respectively, for working with files in S3 and locally
+- creating context that contains reference to policy object and provides methods for performing file operations. For example, `getUserAvatar()` and `deleteUserAvatar()` methods can delegate call to corresponding strategy object method
+- in the client code you can dynamically select which storage to use for working with files by substituting a strategy object into the context
+
 ### Observer
 An observer is a pattern that allows objects to monitor events occurring in other objects. Observer pattern suggests storing list of references to subscriber objects inside publisher object, without publisher having to maintain subscription list itself. It will provide methods by which subscribers can add or remove themselves from the list.
 
@@ -104,9 +111,9 @@ Template Method is a behavioral design pattern that defines skeleton of algorith
 
 [Example:](https://github.com/PashakArt/typescript-oop-patterns/tree/main/src/behavioral_patterns/template_method) working with files of different formats. There are common steps, such as opening a file and closing it, and there are steps whose implementation varies depending on the file type.
 ### Iterator
-[Example:]()
+`TODO`
 ### Mediator
-[Example:]()
+`TODO`
 ### Memento
 Memento is a behavioral design pattern that allows you to save and restore an object's previous state. To do this, pattern suggests keeping copy of state in special snapshot object with limited interface that allows, for example, to find out date of manufacture or the name of snapshot. But, on other hand, snapshot must be open to its creator, allowing its internal state to be read and restored.
 
